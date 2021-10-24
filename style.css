@@ -3,8 +3,16 @@
 }
 
 :root {
+  /* Colors */
   --black: hsl(240, 6%, 13%);
   --gray: hsl(240, 9%, 89%);
+  --dark-gray: hsl(240, 6%, 21%);
+
+  /* Sizes */
+  --size-1: 1.5rem;
+  --size-2: 3rem;
+  --size-3: 10rem;
+  --size-4: 11.5rem;
 }
 
 html,
@@ -34,8 +42,8 @@ main {
 }
 
 .avatar {
-  margin: 11.5rem auto 0;
-  width: 10rem;
+  margin: var(--size-4) auto 0;
+  width: var(--size-3);
   position: relative;
 }
 
@@ -46,19 +54,19 @@ main {
 }
 
 .avatar > img {
-  width: 10rem;
-  height: 11.5rem;
+  width: var(--size-3);
+  height: var(--size-4);
   object-fit: cover;
   clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
 }
 
 h1 {
-  margin-top: 1.5rem;
-  font-size: 1.5rem;
+  margin-top: var(--size-1);
+  font-size: var(--size-1);
 }
 
 a {
-  margin-top: .25rem;
+  margin-top: 0.25rem;
   color: var(--gray);
   text-decoration: none;
   display: flex;
@@ -78,4 +86,17 @@ ul {
   display: flex;
   gap: 0.5rem;
   justify-content: center;
+}
+
+#setSocialMediasButton {
+  width: var(--size-2);
+  height: var(--size-2);
+  position: fixed;
+  bottom: var(--size-1);
+  right: var(--size-1);
+  border: 0 solid;
+  font-size: 2rem;
+  font-weight: 500;
+  color: white;
+  background-color: var(--dark-gray);
 }

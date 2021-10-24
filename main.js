@@ -1,9 +1,9 @@
 const userSocialMedia = {
-  github: "maykbrito",
-  facebook: "breno.cesar.104418",
+  github: "BrenoC616",
+  facebook: "brenoc616",
   instagram: "brenoc616",
-  youtube: "channel/UC3m2E2Onjnq-zF7eXbvEk-Q",
-  twitter: "maykbrito",
+  youtube: "",
+  twitter: "",
 };
 
 function ChangeUserSocialMedia() {
@@ -27,6 +27,17 @@ function GetGitHubProfileInfo() {
       userGitHubLink.href = data.html_url;
       userBio.textContent = data.bio;
     });
+}
+
+function SetSocialMedias() {
+  userSocialMedia.github = prompt("Your GitHub User");
+  userSocialMedia.facebook = prompt("Your Facebook User Name");
+  userSocialMedia.instagram = prompt("Your Instagram User. Without @");
+  userSocialMedia.youtube = prompt("Your YouTube User or Identifier");
+  userSocialMedia.twitter = prompt("Your Twitter User. Without @");
+
+  ChangeUserSocialMedia();
+  GetGitHubProfileInfo();
 }
 
 ChangeUserSocialMedia();
