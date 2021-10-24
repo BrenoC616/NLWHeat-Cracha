@@ -10,7 +10,7 @@ function ChangeUserSocialMedia() {
   for (let li of userSocialMediaLinks.children) {
     const socialName = li.getAttribute("class");
     let newLink = `https://${socialName}.com/${userSocialMedia[socialName]}`;
-    let a = li.children[0];
+    let a = li.firstElementChild;
     a.href = newLink;
   }
 }
