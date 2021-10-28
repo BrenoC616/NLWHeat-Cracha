@@ -1,9 +1,9 @@
 const userSocialMedia = {
   github: "BrenoC616",
-  facebook: "Brenoc616",
-  instagram: "Brenoc616",
-  youtube: "Brenoc616",
-  twitter: "Brenoc616",
+  facebook: "BrenoC616",
+  instagram: "BrenoC616",
+  youtube: "BrenoC616",
+  twitter: "BrenoC616",
 };
 
 function ChangeUserSocialMedia() {
